@@ -1,5 +1,5 @@
 {% set name = "tty-prompt" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,14 +7,13 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 5dc55f299c409ce4eaedd58f87ff51235673dc0b307225400e5e3b86bced6ba6
+  sha256: abeb4247e22f34600ba60c62b966131c6ec9a3bfc9442dfcebb642484fd5d909
 
 build:
   noarch: generic
-  number: 1
+  number: 0
   script:
-    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem
-      && gem unpack {{ name }}-{{ version }}.gem
+    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem && gem unpack {{ name }}-{{ version }}.gem
   skip: {{ win }}
 
 requirements:
@@ -35,7 +34,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: {{ name }}-{{ version }}/LICENSE.txt
-  summary: 'A beautiful and powerful interactive command line prompt with a robust API for getting and validating complex inputs.'
+  summary: A beautiful and powerful interactive command line prompt with a robust API for getting and validating complex inputs.
   doc_url: https://www.rubydoc.info/gems/{{ name }}
   dev_url: https://github.com/piotrmurach/tty-prompt
 
