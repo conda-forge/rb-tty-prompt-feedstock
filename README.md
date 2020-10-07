@@ -5,11 +5,13 @@ Home: https://rubygems.org/gems/tty-prompt
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rb-tty-prompt-feedstock/blob/master/LICENSE.txt)
 
 Summary: A beautiful and powerful interactive command line prompt with a robust API for getting and validating complex inputs.
 
+Development: https://github.com/piotrmurach/tty-prompt
 
+Documentation: https://www.rubydoc.info/gems/tty-prompt
 
 Current build status
 ====================
