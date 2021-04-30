@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: generic
-  number: 0
+  number: 1
   script:
     - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem && gem unpack {{ name }}-{{ version }}.gem
   skip: {{ win }}
@@ -40,6 +40,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - sodre
     - rluria14
     - adbeda
