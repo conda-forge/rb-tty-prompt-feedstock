@@ -1,5 +1,5 @@
 {% set name = "tty-prompt" %}
-{% set version = "0.21.0" %}
+{% set version = "0.23.1" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: abeb4247e22f34600ba60c62b966131c6ec9a3bfc9442dfcebb642484fd5d909
+  sha256: fcdbce905238993f27eecfdf67597a636bc839d92192f6a0eef22b8166449ec8
 
 build:
   noarch: generic
   number: 0
   script:
-    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem && gem unpack {{ name }}-{{ version }}.gem
+    - gem install -N -l -V --norc --ignore-dependencies -n $PREFIX/bin {{ name }}-{{ version }}.gem
   skip: {{ win }}
 
 requirements:
@@ -21,9 +21,8 @@ requirements:
     - ruby >=2.5.5
   run:
     - ruby >=2.5.5
-    - rb-necromancer >=0.5.0,<0.6
-    - rb-pastel >=0.7.0,<0.8
-    - rb-tty-reader >=0.7.0,<0.8
+    - rb-pastel >0.8
+    - rb-tty-reader >0.8
 
 test:
   commands:
@@ -41,6 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - sodre
-    - rluria14
-    - adbeda
-    - oblute
+    - mxr-conda
