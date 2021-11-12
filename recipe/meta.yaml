@@ -20,7 +20,7 @@ requirements:
   host:
     - ruby >=2.0.0
   run:
-    - {{ pin_compatible('ruby', max_pin='x.x') }}
+    - ruby >=2.0.0
     - rb-pastel >=0.8
     - rb-tty-reader >=0.8
 
