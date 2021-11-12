@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - ruby >=2.5.5
+    - ruby >=2.0.0
   run:
     - {{ pin_compatible('ruby', max_pin='x.x') }}
-    - rb-pastel >=0.8
-    - rb-tty-reader >=0.8
+    - rb-pastel ~>0.8
+    - rb-tty-reader ~>0.8
 
 test:
   commands:
