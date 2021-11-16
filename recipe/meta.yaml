@@ -26,15 +26,15 @@ requirements:
 
 test:
   commands:
-    - ruby -r {{ name }} -e 'exit 0'
+    - ruby -r tty-prompt -e 'exit 0'
 
 about:
-  home: https://rubygems.org/gems/{{ name }}
+  home: https://rubygems.org/gems/tty-prompt
   license: MIT
   license_family: MIT
-  license_file: {{ name }}-{{ version }}/LICENSE.txt
+  license_file: LICENSE.txt
   summary: A beautiful and powerful interactive command line prompt with a robust API for getting and validating complex inputs.
-  doc_url: https://www.rubydoc.info/gems/{{ name }}
+  doc_url: https://www.rubydoc.info/gems/{tty-prompt
   dev_url: https://github.com/piotrmurach/tty-prompt
 
 extra:
