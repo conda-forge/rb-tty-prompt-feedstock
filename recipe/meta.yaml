@@ -1,5 +1,5 @@
 {% set name = "tty-prompt" %}
-{% set version = "0.21.0" %}
+{% set version = "0.22.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: abeb4247e22f34600ba60c62b966131c6ec9a3bfc9442dfcebb642484fd5d909
+  sha256: a7987ebec253303c3c9a3e17b1bfc02e1df4e987dd6ca55e2f5bfdaa6b041e9c
 
 build:
   noarch: generic
